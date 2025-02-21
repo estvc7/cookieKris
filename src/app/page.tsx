@@ -35,10 +35,6 @@ const HomePage: React.FC = () => {
         </Section>
 
         <FAQ />
-{/* 
-        <Stats />
-        
-        <CTA /> */}
       </Container>
     </>
   );
