@@ -30,7 +30,7 @@ export const footerDetails: {
         // twitter: 'https://twitter.com/Twitter',
         // facebook: 'https://facebook.com',
         // youtube: 'https://youtube.com',
-        whatsapp: 'https://www.whatsapp.com',
+        whatsapp: 'https://wa.me/50688807062?text=Hola%2C%20Quiero%20Galletas%20hoy%3F',
         // linkedin: 'https://www.linkedin.com',
         // threads: 'https://www.threads.net',
         instagram: 'https://www.instagram.com/cookie_kits_by_kris/',
