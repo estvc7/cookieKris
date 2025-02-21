@@ -1,9 +1,9 @@
 export const siteDetails = {
     siteName: 'Cookie Kits by Kris',
-    siteUrl: 'https://finwise-omega.vercel.app/',
+    siteUrl: 'https://cookie-kris.vercel.app/',
     metadata: {
-        title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+        title: 'Cookie Kits by Kris',
+        description: 'Cookie Kits by Kris es una tienda en línea que ofrece kits de galletas y pasteles para que puedas disfrutar de una experiencia culinaria única.',
     },
     language: 'en-us',
     locale: 'en-US',
