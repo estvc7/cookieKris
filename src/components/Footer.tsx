@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
                     </ul>
                 </div>
                 <div>
-                    <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+                    <h4 className="text-lg font-semibold mb-4">Contacto</h4>
 
                     {footerDetails.email && <a href={`mailto:${footerDetails.email}`}  className="block text-foreground-accent hover:text-foreground">Email: {footerDetails.email}</a>}
 

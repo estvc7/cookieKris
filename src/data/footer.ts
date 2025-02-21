@@ -23,7 +23,7 @@ export const footerDetails: {
         }
     ],
     email: 'kris@hotmail.com',
-    telephone: '+1 (123) 456-7890',
+    telephone: '(+506) 8880-7062',
     socials: {
         // github: 'https://github.com',
         // x: 'https://twitter.com/x',
@@ -33,6 +33,6 @@ export const footerDetails: {
         whatsapp: 'https://www.whatsapp.com',
         // linkedin: 'https://www.linkedin.com',
         // threads: 'https://www.threads.net',
-        instagram: 'https://www.instagram.com',
+        instagram: 'https://www.instagram.com/cookie_kits_by_kris/',
     }
 }
