@@ -51,7 +51,7 @@ export default function RootLayout({
       >
         {siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
         <Header />
-        <main>
+        <main className="pt-16 md:pt-20">
           {children}
         </main>
         <Footer />
