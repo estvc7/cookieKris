@@ -14,7 +14,6 @@ Try out the demo here: [https://cookie-kris.vercel.app](https://cookie-kris.verc
 - Access to **31+ icon packs** via [React Icons](https://react-icons.github.io/react-icons/)
 - Near-perfect **Lighthouse score**
 - Modular, responsive, and **scalable components**
-- **Free lifetime updates**
 
 ## Sections
 
@@ -39,7 +38,9 @@ Before starting, make sure you have the following installed:
 - **Code editor**: [VS Code](https://code.visualstudio.com/) is recommended.
 
 ### Steps
-
+> [!NOTE]
+> Make sure to have the latest version of node as is mentioned in the prerequisites
+ 
 1. **Install dependencies**: Run `npm install`
 2. **Run the development server**: `npm run dev`
 3. **View your project**: Open [localhost:3000](http://localhost:3000)
@@ -54,29 +55,7 @@ Before starting, make sure you have the following installed:
 
 ## Deploying on Vercel
 
-The fastest way to deploy Cookie Kits by Kris is on [Vercel](https://vercel.com/). Simply click the "Deploy with Vercel" button at the top of this README, or check the [Next.js deployment docs](https://vercel.com/docs/deployments/deployment-methods) for other deployment options.
-
-## Contributing
-
-Cookie Kits by Kris is an open-source project, and we welcome contributions from the community! If you have ideas for new components, designs, layouts, or optimizations, please join us in making Cookie Kits by Kris even better.
-
-### How to Contribute
-
-1. **Fork the Repository**: Clone it locally.
-2. **Create a New Branch**: For example, `feature/new-section` or `fix/style-issue`.
-3. **Develop and Test**: Make sure your changes work and don't break existing functionality.
-4. **Submit a Pull Request**: Open a pull request with a clear description of your changes, and we'll review it.
-
-### Ideas for Contributions
-
-- New component sections (team introductions, comparison table, case studies, etc.)
-- Additional page variants (e.g., agency, eCommerce, portfolio layouts)
-- Additional themes
-- Documentation updates, tutorials, or guides
-
-## Community and Support
-
-Join our community discussions on GitHub to share ideas, ask questions, or suggest improvements. Let’s build something amazing together!
+only collaborators can deploy to vercel.
 
 ## License
 
