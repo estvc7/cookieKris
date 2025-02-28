@@ -7,7 +7,7 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Grand sabor a un mordisco",
+    subheading: "Cookie Kits by Kris es una empresa dedicada a la venta de kits de galletas para que puedas disfrutar de un momento dulce con tus seres queridos.",
     quickLinks: [
         {
             text: "Detalles",
@@ -20,6 +20,10 @@ export const footerDetails: {
         {
             text: "Testimonios",
             url: "#testimonials"
+        },
+        {
+            text: "Preguntas frecuentes",
+            url: "#preguntasFrecuentes"
         }
     ],
     email: 'kris@hotmail.com',

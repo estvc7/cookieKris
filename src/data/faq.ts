@@ -4,22 +4,22 @@ import { IFAQ } from "@/types";
 export const faqs: IFAQ[] = [
     {
         question: `Donde puedo realizar mi pedido?`,
-        answer: 'Puedes realizar tu pedido en línea a través de nuestro sitio web o en persona en cualquiera de nuestras ubicaciones.',
+        answer: 'Puedes realizar tu pedido atravez de WhatsApp al número (+506) 8880-7062 o Instagram @cookie_kits_by_kris',
     },
     {
         question: `Cuál es el tiempo de entrega?`,
-        answer: 'El tiempo de entrega varía según la ubicación y la hora del día. Por lo general, los pedidos en línea se entregan en 30-45 minutos.',
+        answer: 'El tiempo de entrega varía según la ubicación y la hora del día.',
     },
     {
         question: 'Puedo personalizar mi pedido?',
-        answer: `¡Por supuesto! Nuestro menú ofrece una amplia variedad de opciones para adaptarse a tus preferencias dietéticas y gustos personales.`,
+        answer: `No, por el momento no ofrecemos la opción de personalizar pedidos. Sin embargo, estamos trabajando en ello y esperamos ofrecer esta opción en el futuro.`,
     },
     {
         question: 'Cómo puedo pagar mi pedido?',
-        answer: 'Aceptamos todas las principales tarjetas de crédito, así como Apple Pay, Google Pay y PayPal. También puedes pagar en efectivo al recibir tu pedido.',
+        answer: 'Atravez de transferencia bancaria o en SIMPE MOVIL.',
     },
     {
         question: 'Qué hago si tengo una alergia alimentaria?',
-        answer: 'Si tienes una alergia alimentaria, por favor avísanos al realizar tu pedido. Nuestro equipo estará encantado de ayudarte a encontrar una opción segura y deliciosa.',
+        answer: 'Si tienes una alergia alimentaria, por favor avísanos, asi podemos ofrecerte una opción segura para ti.',
     }
 ];

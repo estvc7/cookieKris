@@ -12,5 +12,9 @@ export const menuItems: IMenuItem[] = [
     {
         text: "Testimonios",
         url: "#testimonials"
+    },
+    {
+        text: "Preguntas Frecuentes",
+        url: "#preguntasFrecuentes"
     }
 ];

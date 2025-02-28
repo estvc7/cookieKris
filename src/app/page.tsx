@@ -34,7 +34,12 @@ const HomePage: React.FC = () => {
           <Testimonials />
         </Section>
 
-        <FAQ />
+        <Section
+          id="preguntasFrecuentes"
+          title=""
+          description="">
+          <FAQ />
+        </Section>
       </Container>
     </>
   );
