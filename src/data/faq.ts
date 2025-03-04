@@ -3,7 +3,7 @@ import { IFAQ } from "@/types";
 export const faqs: IFAQ[] = [
     {
         question: `Donde puedo realizar mi pedido?`,
-        answer: 'Puedes realizar tu pedido atravez de WhatsApp al número (+506) 8880-7062 o Instagram @cookie_kits_by_kris',
+        answer: 'Puedes realizar tu pedido atravez de WhatsApp o Instagram DM.',
     },
     {
         question: `Cuál es el tiempo de entrega?`,

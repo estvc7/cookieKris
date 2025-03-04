@@ -8,6 +8,7 @@ export const tiers: IPricing[] = [
             '9 minigalletas con chispas de chocolate',
             'Acompañadas de Nutella o Dulce de Leche',
         ],
+        imageURL: '/images/cookieBites.webp'
     },
     {
         name: 'NY Cookie Original -150 gr',
@@ -16,6 +17,7 @@ export const tiers: IPricing[] = [
             'Nueces',
             'Chispas de chocolate'
         ],
+        imageURL: '/images/mainCookie.webp'
     },
     {
         name: 'NY Cookie - Chocolate 150 gr',
@@ -24,6 +26,7 @@ export const tiers: IPricing[] = [
             'Choco nueces',
             'Chispas de chocolate'
         ],
+        imageURL: '/images/nutsCookie.webp'
     },
     {
         name: 'NY Cookie - Choco Nutella 150 gr',
@@ -32,6 +35,7 @@ export const tiers: IPricing[] = [
             'Nutella',
             'Chispas de chocolate'
         ],
+        imageURL: '/images/chocolateV1.webp'
     },
     {
         name: 'NY Cookie - Macadamia  150 gr',
@@ -40,6 +44,7 @@ export const tiers: IPricing[] = [
             'Macadamia',
             'Chispas de chocolate'
         ],
+        imageURL: '/images/heroCookie.webp'
     },
     {
         name: 'NY Cookie - Ferrero Rocher 150 gr',
@@ -49,5 +54,6 @@ export const tiers: IPricing[] = [
             'Nutella',
             'Chispas de chocolate'
         ],
+        imageURL: '/images/ferreroCookie.webp'
     }
 ]
