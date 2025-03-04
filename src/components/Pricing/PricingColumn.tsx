@@ -27,7 +27,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                     <BsWhatsapp className="mr-2" />
                     <span>Pedir</span>
                 </button> */}
-                <WhatsAppButton highlight={highlight} />
+                <WhatsAppButton highlight={highlight} details={name} />
             </div>
             <div className="p-6 mt-1">
                 <p className="font-bold mb-0">Incluye:</p>

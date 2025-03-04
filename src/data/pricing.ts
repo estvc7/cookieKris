@@ -34,7 +34,7 @@ export const tiers: IPricing[] = [
         ],
     },
     {
-        name: 'NY Cookie - Macadamia 150 gr',
+        name: 'NY Cookie - Macadamia  150 gr',
         price: 2350,
         features: [
             'Macadamia',
@@ -42,7 +42,7 @@ export const tiers: IPricing[] = [
         ],
     },
     {
-        name: 'NY Cookie - Ferrero 150 gr',
+        name: 'NY Cookie - Ferrero Rocher 150 gr',
         price: 2350,
         features: [
             'Ferrero Rocher',
