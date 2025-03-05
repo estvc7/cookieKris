@@ -9,7 +9,7 @@ const WelcomeModalClient: React.FC = () => {
     const isFirstVisit = localStorage.getItem('isFirstVisit') === null;
     if (isFirstVisit) {
       setShowModal(true);
-      // localStorage.setItem('isFirstVisit', 'false');
+      localStorage.setItem('isFirstVisit', 'false');
     }
   }, []);
 
