@@ -52,3 +52,14 @@ export interface ISocials {
     x?: string;
     [key: string]: string | undefined;
 }
+
+export interface IWelcomeModalProps {
+    show: boolean;
+    handleClose: () => void;
+}
+
+export interface IPricingModalProps {
+    imageURL: string;
+    onClose: () => void;
+    name: string;
+}

@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { IPricingModalProps }from '@/types';
 
-interface ModalProps {
-    imageURL: string;
-    onClose: () => void;
-    name: string;
-}
 
-const PricingModal: React.FC<ModalProps> = ({ imageURL, onClose, name }) => {
+const PricingModal: React.FC<IPricingModalProps> = ({ imageURL, onClose, name }) => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
