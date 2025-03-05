@@ -7,7 +7,7 @@ const Pricing: React.FC = () => {
     const [showMore, setShowMore] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
     const [containerHeight, setContainerHeight] = useState<string | number>('auto');
-    const height = 475;
+    const height = 580;
 
     useEffect(() => {
         if (containerRef.current) {
@@ -43,7 +43,7 @@ const Pricing: React.FC = () => {
             {tiers.length > 3 && (
                 <div 
                     onClick={() => setShowMore(!showMore)} 
-                    className="mt-4 flex items-center justify-center cursor-pointer"
+                    className="mt-10 flex items-center justify-center cursor-pointer"
                 >
                     <div className="border-t border-gray-300 flex-grow"></div>
                     <div className="mx-4 text-gray-500 transition-transform duration-300">

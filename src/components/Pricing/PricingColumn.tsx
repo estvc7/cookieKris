@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import clsx from "clsx";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import Image from 'next/image';
 
 import { IPricing } from "@/types";
 import WhatsAppButton from "./WhatsAppButton";
+import PricingModal from "../Modals/pricingModal";
 
 interface Props {
     tier: IPricing;
@@ -12,13 +14,28 @@ interface Props {
 
 const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
     const { name, price, features, imageURL } = tier;
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleImageClick = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
 
     return (
         <div className={clsx("w-full max-w-sm mx-auto bg-white rounded-xl border border-gray-200 lg:max-w-full", { "shadow-lg": highlight })}>
             <div className="p-6 border-b border-gray-200 rounded-t-xl">
                 {imageURL && (
-                    <div className="w-full h-24 relative mb-4">
-                        <Image src={imageURL} alt={name} layout="fill" objectFit="cover" className="rounded-t-xl" />
+                    <div className="w-full h-24 relative mb-4" onClick={handleImageClick}>
+                        <Image 
+                            src={imageURL} 
+                            alt={name} 
+                            fill 
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+                            className="object-cover rounded-t-xl cursor-pointer" 
+                        />
                     </div>
                 )}
                 <h3 className="text-2xl font-semibold mb-4">{name}</h3>
@@ -41,6 +58,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                     ))}
                 </ul>
             </div>
+            {isModalOpen && imageURL && <PricingModal imageURL={imageURL} onClose={closeModal} name={name} />}
         </div>
     )
 }
