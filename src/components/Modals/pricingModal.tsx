@@ -25,7 +25,7 @@ const PricingModal: React.FC<ModalProps> = ({ imageURL, onClose, name }) => {
                 <button onClick={handleClose} className="absolute top-2 right-2 text-gray-600">
                     &times;
                 </button>
-                <div className="relative w-full h-96">
+                <div className="relative w-full h-96 mb-4">
                     <Image 
                         src={imageURL} 
                         alt={name} 
@@ -33,6 +33,11 @@ const PricingModal: React.FC<ModalProps> = ({ imageURL, onClose, name }) => {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
                         className="object-contain rounded-t-xl cursor-pointer" 
                     />
+                </div>
+                <div className="flex justify-end">
+                    <button onClick={handleClose} className="px-4 py-2 bg-red-500 text-white rounded-lg">
+                        Cerrar
+                    </button>
                 </div>
             </div>
         </div>
