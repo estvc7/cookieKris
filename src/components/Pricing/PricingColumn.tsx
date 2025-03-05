@@ -42,6 +42,9 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                             className={clsx("object-cover rounded-t-xl cursor-pointer", { "animate-fadeIn": imageLoaded })} 
                             onLoad={handleImageLoad}
                         />
+                        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-sm font-bold opacity-0 hover:opacity-100 transition-opacity">
+                            Click para ver
+                        </div>
                     </div>
                 )}
                 <h3 className="text-2xl font-semibold mb-4">{name}</h3>
