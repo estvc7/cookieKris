@@ -3,7 +3,7 @@ export const siteDetails = {
     siteUrl: 'https://cookie-kris.vercel.app/',
     metadata: {
         title: 'Cookie Kits by Kris',
-        description: 'Cookie Kits by Kris es una tienda en línea que ofrece kits de galletas y pasteles para que puedas disfrutar de una experiencia culinaria única.',
+        description: 'Disfruta de un momento dulce con tus seres queridos.',
     },
     language: 'en-us',
     locale: 'en-US',

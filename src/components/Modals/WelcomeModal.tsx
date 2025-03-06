@@ -11,7 +11,7 @@ const WelcomeModal: React.FC<IWelcomeModalProps> = ({ show, handleClose }) => {
             <div className="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all max-w-lg w-full p-6 animate-fade-in">
                 <div className="flex justify-between items-center border-b pb-3">
                     <h2 className="text-lg font-medium text-center text-gradient bg-gradient-to-r animate-bounce">
-                        Bienvenido a CookieKris by Kris!
+                        Bienvenido a Cookie Kits by Kris!
                     </h2>
                     <button className="text-gray-500 hover:text-gray-700" onClick={handleClose}>
                         <FaTimes />

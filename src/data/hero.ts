@@ -1,5 +1,5 @@
 export const heroDetails = {
-    heading: 'Cookie Kits by kris',
-    subheading: 'El proposito de esta pagina es exclusivamente informativa, no se realizan pagos ni se recopilan datos de los usuarios.',
+    heading: 'Cookie Kits by Kris',
+    subheading: 'Disfruta de un momento dulce con tus seres queridos.',
     centerImageSrc: '/images/heroCookie.webp',
 }

@@ -15,7 +15,7 @@ export const faqs: IFAQ[] = [
     },
     {
         question: 'Cómo puedo pagar mi pedido?',
-        answer: 'Atravez de transferencia bancaria o en SIMPE MOVIL.',
+        answer: 'Atravez de transferencia bancaria o en SINPE MOVIL.',
     },
     {
         question: 'Qué hago si tengo una alergia alimentaria?',

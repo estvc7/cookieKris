@@ -14,7 +14,7 @@ export const footerDetails: {
             url: "#features"
         },
         {
-            text: "Precios",
+            text: "Nuestros Productos",
             url: "#pricing"
         },
         {

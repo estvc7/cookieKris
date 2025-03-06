@@ -22,8 +22,8 @@ const HomePage: React.FC = () => {
 
         <Section
           id="pricing"
-          title="Precios"
-          description="Elige el plan que mejor se adapte a tus necesidades."
+          title="Nuestros Productos"
+          description="Elige el producto que más te gusta al mejor precio."
         >
           <Pricing />
         </Section>

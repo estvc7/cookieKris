@@ -5,21 +5,21 @@ import { IBenefit } from "@/types"
 export const benefits: IBenefit[] = [
     {
         title: "Sabor al mejor precio",
-        description: "Compra productos de calidad a precios bajos.",
+        description: "Compra nuestros productos  a precios bajos.",
         bullets: [
             {
-                title: "Productos frescos",
-                description: "Frescura garantizada en todos nuestros productos.",
+                title: "Productos accesibles",
+                description: "Productos a precios accesibles para todos los bolsillos.",
                 icon: <FiBarChart2 size={26} />
             },
             {
                 title: "Productos de calidad",
-                description: "Calidad con los mejores ingredientes.",
+                description: "Productos cocinados con los mejores ingredientes.",
                 icon: <FiTarget size={26} />
             },
             {
                 title: "Entrega planificada",
-                description: "Entrega planificada para que no te falte nada.",
+                description: "Entrega agendada para que disfrutes de cada bocado.",
                 icon: <FiClock size={26} />
             }
         ],
@@ -30,18 +30,18 @@ export const benefits: IBenefit[] = [
         description: "Descubre nuevos sabores y disfruta de una experiencia culinaria única.",
         bullets: [
             {
-                title: "Sabor garantizado",
-                description: "Sabores únicos y deliciosos.",
+                title: "Sabor único",
+                description: "Cada galleta tiene un sabor único y especial.",
                 icon: <FiCheck size={26} />
             },
             {
                 title: "Variedad de productos",
-                description: "Gran variedad de productos para todos los gustos.",
+                description: "Diferentes tipos de galletas para que disfrutes de una experiencia única.",
                 icon: <FiBriefcase size={26} />
             },
             {
                 title: "Porción perfecta",
-                description: "Porciones perfectas para disfrutar en cualquier momento.",
+                description: "Porciones perfectas para disfrutar de un momento dulce.",
                 icon: <FiPieChart size={26} />
             }
         ],
