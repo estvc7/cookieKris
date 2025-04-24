@@ -33,6 +33,7 @@ export interface ITestimonial {
     role: string;
     message: string;
     avatar: string;
+    timestamp: string;
 }
 
 export interface IStats {
