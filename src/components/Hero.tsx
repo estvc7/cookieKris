@@ -26,6 +26,7 @@ const Hero: React.FC = () => {
                     autoPlay
                     loop
                     muted
+                    playsInline
                     className="relative mt-12 md:mt-8 mx-auto z-10 rounded-lg shadow-lg animate-fadeIn w-full md:w-auto"
                 />
             </div>
