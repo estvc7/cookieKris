@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import { heroDetails } from '@/data/hero';
 
@@ -20,16 +19,14 @@ const Hero: React.FC = () => {
             <div className="text-center animate-fadeIn">
                 <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{heroDetails.heading}</h1>
                 <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
-                <Image
-                    src={heroDetails.centerImageSrc}
+                <video
+                    src={heroDetails.centerVideoSrc}
                     width={384}
                     height={320}
-                    quality={100}
-                    sizes="(max-width: 768px) 100vw, 384px"
-                    priority={true}
-                    unoptimized={true}
-                    alt="app mockup"
-                    className='relative mt-12 md:mt-8 mx-auto z-10 rounded-lg shadow-lg mask-image-fade animate-fadeIn'
+                    autoPlay
+                    loop
+                    muted
+                    className="relative mt-12 md:mt-8 mx-auto z-10 rounded-lg shadow-lg animate-fadeIn w-full md:w-auto"
                 />
             </div>
         </section>

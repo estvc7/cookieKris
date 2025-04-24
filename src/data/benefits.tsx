@@ -4,8 +4,8 @@ import { IBenefit } from "@/types"
 
 export const benefits: IBenefit[] = [
     {
-        title: "Sabor al mejor precio",
-        description: "Compra nuestros productos  a precios bajos.",
+        title: "Delicias para todos",
+        description: "Disfruta de nuestras deliciosas galletas hechas con dedicación y calidad.",
         bullets: [
             {
                 title: "Productos accesibles",

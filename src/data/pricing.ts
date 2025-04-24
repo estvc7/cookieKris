@@ -15,7 +15,7 @@ export const tiers: IPricing[] = [
         price: 2350,
         features: [
             'Nueces',
-            'Chispas de chocolate'
+            'Chispas de chocolate'                  
         ],
         imageURL: '/images/mainCookie.webp'
     },
@@ -35,7 +35,7 @@ export const tiers: IPricing[] = [
             'Nutella',
             'Chispas de chocolate'
         ],
-        imageURL: '/images/chocolateV1.webp'
+        imageURL: '/images/ChocoNutella.webp'
     },
     {
         name: 'NY Cookie - Macadamia  150 gr',
@@ -44,7 +44,7 @@ export const tiers: IPricing[] = [
             'Macadamia',
             'Chispas de chocolate'
         ],
-        imageURL: '/images/heroCookie.webp'
+        imageURL: '/images/Macadamia.webp'
     },
     {
         name: 'NY Cookie - Ferrero Rocher 150 gr',
@@ -54,6 +54,6 @@ export const tiers: IPricing[] = [
             'Nutella',
             'Chispas de chocolate'
         ],
-        imageURL: '/images/ferreroCookie.webp'
+        imageURL: '/images/Ferrero.webp'
     }
 ]

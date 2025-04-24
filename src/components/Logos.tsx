@@ -20,12 +20,12 @@ const Logos: React.FC = () => {
                     </text>
                 </svg>
 
-                {/* HErs */}
+                {/* HErs
                 <svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
                     <text x="10" y="60" fontFamily="Arial, Helvetica, sans-serif" fontSize="60" fontWeight="bold" fill="#4D0E06">
                         HERSHEYs
                     </text>
-                </svg>
+                </svg> */}
                 {/* Oreo */}
                 <svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
                     <text x="10" y="60" fontFamily="Arial, Helvetica, sans-serif" fontSize="60" fontWeight="bold" fill="#000000">

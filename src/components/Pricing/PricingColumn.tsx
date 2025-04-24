@@ -15,7 +15,6 @@ interface Props {
 const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
     const { name, price, features, imageURL } = tier;
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [imageLoaded, setImageLoaded] = useState(false);
 
     const handleImageClick = () => {
         setIsModalOpen(true);
@@ -23,10 +22,6 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
 
     const closeModal = () => {
         setIsModalOpen(false);
-    };
-
-    const handleImageLoad = () => {
-        setImageLoaded(true);
     };
 
     return (
@@ -38,13 +33,9 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                             src={imageURL} 
                             alt={name} 
                             fill 
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-                            className={clsx("object-cover rounded-t-xl cursor-pointer", { "animate-fadeIn": imageLoaded })} 
-                            onLoad={handleImageLoad}
+                            style={{ objectFit: "cover" }} 
+                            className="rounded-t-xl cursor-pointer" 
                         />
-                        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-sm font-bold opacity-0 hover:opacity-100 transition-opacity">
-                            Click para ver
-                        </div>
                     </div>
                 )}
                 <h3 className="text-2xl font-semibold mb-4">{name}</h3>
