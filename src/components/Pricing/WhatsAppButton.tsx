@@ -1,28 +1,28 @@
 'use client';
 import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
-import clsx from "clsx";
+import { footerDetails } from "@/data/footer";
 
 interface WhatsAppButtonProps {
-    highlight?: boolean;
-    details?: string;
+    details: string;
 }
 
-const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ highlight, details }) => {
-    const handleButtonClick = () => {
-        const message = `Hola me gustaria solicitar ${details}`;
-        const phoneNumber = '50688807062';
-        window.location.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    };
+const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ details }) => {
+    const message = `Hola, me gustaría solicitar ${details}.`;
+    const phoneNumber = footerDetails.telephone.replace(/\D/g, "");
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     return (
-        <button
-            onClick={handleButtonClick}
-            className={clsx("w-full py-3 px-4 rounded-full transition-colors flex items-center justify-center", { "bg-primary hover:bg-primary-accent": highlight, "bg-hero-background hover:bg-green-400": !highlight })}
+        <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Pedir ${details} por WhatsApp`}
+            className="flex w-full items-center justify-center rounded-full bg-[#25D366] px-4 py-3 text-[#17351F] transition-colors hover:bg-[#20BD5A] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
         >
             <span className="mr-2">Pedir</span>
-            <BsWhatsapp />
-        </button>
+            <BsWhatsapp aria-hidden="true" />
+        </a>
     );
 };
 

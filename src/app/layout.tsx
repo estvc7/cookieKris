@@ -10,22 +10,25 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import "./globals.css";
 
-const manrope = Manrope({ subsets: ['latin'] });
-const sourceSans = Source_Sans_3({ subsets: ['latin'] });
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' });
+const sourceSans = Source_Sans_3({ subsets: ['latin'], variable: '--font-source-sans' });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteDetails.siteUrl),
   title: siteDetails.metadata.title,
   description: siteDetails.metadata.description,
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: siteDetails.metadata.title,
     description: siteDetails.metadata.description,
     url: siteDetails.siteUrl,
     type: 'website',
+    locale: siteDetails.locale,
     images: [
       {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 675,
+        url: '/images/heroCookie.webp',
         alt: siteDetails.siteName,
       },
     ],
@@ -34,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteDetails.metadata.title,
     description: siteDetails.metadata.description,
-    images: ['/images/twitter-image.jpg'],
+    images: ['/images/heroCookie.webp'],
   },
 };
 
@@ -44,19 +47,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${manrope.className} ${sourceSans.className} antialiased`}
-        suppressHydrationWarning
-      >
+    <html lang={siteDetails.language}>
+      <body className={`${manrope.variable} ${sourceSans.variable} antialiased`}>
         {siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
         <Header />
-        <main className="pt-16 md:pt-20">
+        <a
+          href="#contenido-principal"
+          className="sr-only fixed left-4 top-4 z-[60] rounded bg-white px-4 py-2 text-foreground shadow focus:not-sr-only"
+        >
+          Saltar al contenido principal
+        </a>
+        <main id="contenido-principal" className="pt-16 md:pt-20">
           {children}
         </main>
         <Footer />
-        <Analytics/>
-        <SpeedInsights />
+        {process.env.VERCEL === '1' && (
+          <>
+            <Analytics />
+            <SpeedInsights />
+          </>
+        )}
       </body>
     </html>
   );

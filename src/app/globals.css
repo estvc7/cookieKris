@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #FED835;
-  --secondary: #304fff;
-
-  --primary-accent: #e5c230;
-  --foreground-accent: #454545;
-  --hero-background: #F3F3F5;
+  --background: #fff9f0;
+  --surface: #ffffff;
+  --foreground: #2d2118;
+  --foreground-accent: #6b5a4a;
+  --primary: #dfa23a;
+  --primary-accent: #c78925;
+  --secondary: #70452f;
+  --border-subtle: #e9ded0;
+  --hero-background: #f3e8d8;
 }
 
 html {
@@ -22,7 +23,7 @@ body {
   
   color: var(--foreground);
   background: var(--background);
-  font-family: "Source Sans 3", sans-serif;
+  font-family: var(--font-source-sans), sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -39,13 +40,13 @@ body {
 }
 
 .manrope {
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-manrope), sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-manrope), sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -56,4 +57,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .benefit-section:last-of-type > div {
   @apply mb-10;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

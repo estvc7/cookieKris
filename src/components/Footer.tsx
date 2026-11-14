@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                     </p>
                 </div>
                 <div>
-                    <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+                    <h4 className="text-lg font-semibold mb-4">Enlaces rápidos</h4>
                     <ul className="text-foreground-accent">
                         {footerDetails.quickLinks.map(link => (
                             <li key={link.text} className="mb-2">
@@ -34,32 +34,38 @@ const Footer: React.FC = () => {
                 <div>
                     <h4 className="text-lg font-semibold mb-4">Contacto</h4>
 
-                    {footerDetails.email && <a href={`mailto:${footerDetails.email}`}  className="block text-foreground-accent hover:text-foreground">Email: {footerDetails.email}</a>}
+                    {footerDetails.email && <a href={`mailto:${footerDetails.email}`} className="block text-foreground-accent hover:text-foreground">Correo: {footerDetails.email}</a>}
 
-                    {footerDetails.telephone && <a href={`tel:${footerDetails.telephone}`} className="block text-foreground-accent hover:text-foreground">Phone: {footerDetails.telephone}</a>}
+                    {footerDetails.telephone && <a href={`tel:${footerDetails.telephone}`} className="block text-foreground-accent hover:text-foreground">Teléfono: {footerDetails.telephone}</a>}
 
-                    {footerDetails.socials && (
-                        <div className="mt-5 flex items-center gap-5 flex-wrap">
-                            {Object.keys(footerDetails.socials).map(platformName => {
-                                if (platformName && footerDetails.socials[platformName]) {
-                                    return (
-                                        <Link
-                                            href={footerDetails.socials[platformName]}
-                                            key={platformName}
-                                            aria-label={platformName}
-                                        >
-                                            {getPlatformIconByName(platformName)}
-                                        </Link>
-                                    )
-                                }
-                            })}
-                        </div>
-                    )}
+                    <div className="mt-5 flex items-center gap-5 flex-wrap">
+                        {Object.entries(footerDetails.socials).map(([platformName, url]) => {
+                            if (!url) return null;
+
+                            return (
+                                <a
+                                    href={url}
+                                    key={platformName}
+                                    aria-label={`Visitar ${platformName}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
+                                >
+                                    {getPlatformIconByName(platformName)}
+                                </a>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
             <div className="mt-8 md:text-center text-foreground-accent px-6">
-                <p>Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.</p>
-                <p className="text-sm mt-2 text-gray-500">Made by <a href="https://github.com/estvc7" target="_blank">estvc7</a></p>
+                <p>Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. Todos los derechos reservados.</p>
+                <p className="text-sm mt-2 text-foreground-accent">
+                    Desarrollado por{' '}
+                    <a href="https://github.com/estvc7" target="_blank" rel="noopener noreferrer" className="underline">
+                        estvc7
+                    </a>
+                </p>
             </div>
         </footer>
     );

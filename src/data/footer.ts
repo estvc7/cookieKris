@@ -10,16 +10,12 @@ export const footerDetails: {
     subheading: "Cookie Kits by Kris es una empresa dedicada a la venta de kits de galletas para que puedas disfrutar de un momento dulce con tus seres queridos.",
     quickLinks: [
         {
-            text: "Detalles",
-            url: "#features"
-        },
-        {
-            text: "Nuestros Productos",
+            text: "Productos",
             url: "#pricing"
         },
         {
-            text: "Testimonios",
-            url: "#testimonials"
+            text: "Cómo pedir",
+            url: "#como-pedir"
         },
         {
             text: "Preguntas frecuentes",

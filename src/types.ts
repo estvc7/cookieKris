@@ -3,19 +3,6 @@ export interface IMenuItem {
     url: string;
 }
 
-export interface IBenefit {
-    title: string;
-    description: string;
-    imageSrc: string;
-    bullets: IBenefitBullet[]
-}
-
-export interface IBenefitBullet {
-    title: string;
-    description: string;
-    icon: JSX.Element;
-}
-
 export interface IPricing {
     name: string;
     price: number | string;
@@ -26,14 +13,6 @@ export interface IPricing {
 export interface IFAQ {
     question: string;
     answer: string;
-}
-
-export interface ITestimonial {
-    name: string;
-    role: string;
-    message: string;
-    avatar: string;
-    timestamp: string;
 }
 
 export interface IStats {
@@ -52,11 +31,6 @@ export interface ISocials {
     youtube?: string;
     x?: string;
     [key: string]: string | undefined;
-}
-
-export interface IWelcomeModalProps {
-    show: boolean;
-    handleClose: () => void;
 }
 
 export interface IPricingModalProps {

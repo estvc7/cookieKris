@@ -5,8 +5,8 @@ export const siteDetails = {
         title: 'Cookie Kits by Kris',
         description: 'Disfruta de un momento dulce con tus seres queridos.',
     },
-    language: 'en-us',
-    locale: 'en-US',
+    language: 'es-CR',
+    locale: 'es_CR',
     siteLogo: `${process.env.BASE_PATH || ''}/images/logo.png`, // or use a string for the logo e.g. "TechStartup"
     googleAnalyticsId: '', // e.g. G-XXXXXXX,
 }

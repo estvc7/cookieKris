@@ -8,7 +8,7 @@ interface Props {
 
 const Section: React.FC<React.PropsWithChildren<Props>> = ({ id, title, description, children }: React.PropsWithChildren<Props>) => {
     return (
-        <section id={id} className="py-10 lg:py-20">
+        <section id={id} className="scroll-mt-24 py-10 lg:py-20">
             {id && title && (
                 <>
                     <SectionTitle>
